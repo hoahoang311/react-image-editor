@@ -369,6 +369,12 @@ export interface FilerobotImageEditorConfig {
   backgroundColor?: string;
   backgroundImage?: HTMLImageElement;
   actionComponents: React.ReactNode;
+  setMeasurement?: React.Dispatch<
+    React.SetStateAction<{
+      topToChin: number;
+      topMargin: number;
+    }>
+  >;
 }
 
 declare const FilerobotImageEditor: FunctionComponent<FilerobotImageEditorConfig>;
