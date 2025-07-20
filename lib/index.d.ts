@@ -387,6 +387,10 @@ export interface FilerobotImageEditorConfig {
   idOptions: IdPhotoType[];
   activeId: IdPhotoType | null;
   setActiveId: React.Dispatch<React.SetStateAction<IdPhotoType | null>>;
+  measurement: {
+    topToChin: number;
+    topMargin: number;
+  };
   setMeasurement?: React.Dispatch<
     React.SetStateAction<{
       topToChin: number;
