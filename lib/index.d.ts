@@ -385,6 +385,7 @@ export interface FilerobotImageEditorConfig {
   countries: Array<string>;
   setCountry?: React.Dispatch<React.SetStateAction<string | null>>;
   idOptions: IdPhotoType[];
+  activeId: IdPhotoType | null;
   setActiveId: React.Dispatch<React.SetStateAction<IdPhotoType | null>>;
   setMeasurement?: React.Dispatch<
     React.SetStateAction<{
